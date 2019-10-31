@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 # -*- coding=utf-8 -*-
-import os
-import re
 import paramiko
 
 
@@ -14,7 +12,7 @@ def qytang_ssh(ip,username,password,port=22,cmd='ls'):
     x = stdout.read().decode()
     return x
 if __name__ == '__main__':
-    print(qytang_ssh('10.255.8.130','root','11111111'))
+    print(qytang_ssh('10.255.8.130','root','11111111',cmd='nmcli d show ens33'))
     # print(qytang_ssh('10.255.8.130', 'root', '11111111',cmd='nmcli'))
 
 # ssh = paramiko.SSHClient()

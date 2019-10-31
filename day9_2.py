@@ -17,5 +17,5 @@ def ssh_get_route(ip,username,password):
     print('网关为：\n'+ need_gateway[0])
 
 if __name__ == '__main__':
-    ssh_get_route('10.255.8.130','root','11111111')
+    ssh_get_route('10.255.255.128','root','a.1')
 
